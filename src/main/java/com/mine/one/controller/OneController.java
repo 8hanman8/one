@@ -39,7 +39,7 @@ public class OneController {
 		System.out.println("Host Name:- " + inetAddress.getHostName());
 		result.put("ipAddress", inetAddress.getHostAddress());
 		result.put("hostName", inetAddress.getHostName());
-		
+		result.put("canonicalHostName", inetAddress.getCanonicalHostName());
 		return new ResponseEntity<Object>(result, HttpStatus.OK);
 	}
 }
